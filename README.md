@@ -33,7 +33,7 @@
 ### 安装运行
 
 ```bash
-git clone https://github.com/<your-username>/omni-shopify-app.git
+git clone https://github.com/Alohamonde/omni-shopify-app.git
 cd omni-shopify-app
 npm install
 npm run dev
