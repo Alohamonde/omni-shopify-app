@@ -1,13 +1,12 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-name = "Omni Store Toolkit"
 client_id = ""
 application_url = "https://shopify.dev/apps/default-app-home"
 embedded = true
+name = "Omni Store Toolkit"
 
 [access_scopes]
-# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = ""
+scopes = "read_products,write_products"
 
 [app_proxy]
 url = "/apps/omni/config"

@@ -32,3 +32,44 @@ model Session {
   refreshToken        String?
   refreshTokenExpires DateTime?
 }
+
+model ShopSettings {
+  id                String   @id @default(cuid())
+  shop              String   @unique
+  popupEnabled      Boolean  @default(false)
+  popupTitle        String   @default("限时优惠")
+  popupMessage      String   @default("首单立享 10% 折扣，立即选购！")
+  popupButtonText   String   @default("立即选购")
+  popupButtonUrl    String   @default("/collections/all")
+  popupDelaySeconds Int      @default(3)
+  popupBgColor      String   @default("#111827")
+  popupTextColor    String   @default("#ffffff")
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model CrossSellRule {
+  id                      String   @id @default(cuid())
+  shop                    String
+  sourceProductId         String
+  sourceProductTitle      String
+  recommendedProductId    String
+  recommendedProductTitle String
+  recommendedVariantId    String   @default("")
+  discountPercent         Float    @default(0)
+  enabled                 Boolean  @default(true)
+  createdAt               DateTime @default(now())
+  updatedAt               DateTime @updatedAt
+
+  @@unique([shop, sourceProductId, recommendedProductId])
+  @@index([shop, sourceProductId])
+}
+
+model PopupEvent {
+  id        String   @id @default(cuid())
+  shop      String
+  eventType String
+  createdAt DateTime @default(now())
+
+  @@index([shop, eventType])
+}

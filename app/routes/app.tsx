@@ -22,9 +22,11 @@ export default function App() {
     <AppProvider isEmbeddedApp apiKey={apiKey}>
       <NavMenu>
         <Link to="/app" rel="home">
-          Home
+          总览
         </Link>
-        <Link to="/app/additional">Additional page</Link>
+        <Link to="/app/popup">促销弹窗</Link>
+        <Link to="/app/bulk-editor">批量编辑</Link>
+        <Link to="/app/cross-sell">关联销售</Link>
       </NavMenu>
       <Outlet />
     </AppProvider>

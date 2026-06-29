@@ -1,0 +1,19 @@
+<div id="omni-cross-sell-root" data-product-id="{{ product.id }}"></div>
+
+{% schema %}
+{
+  "name": "Cross Sell",
+  "target": "section",
+  "templates": ["product"],
+  "javascript": "omni-cross-sell.js",
+  "stylesheet": "omni-styles.css",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "标题",
+      "default": "经常一起购买"
+    }
+  ]
+}
+{% endschema %}

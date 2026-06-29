@@ -1,0 +1,67 @@
+.omni-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.omni-popup-card {
+  position: relative;
+  width: min(92vw, 420px);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.omni-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: 0;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.omni-popup-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.omni-cross-sell-heading {
+  margin: 0 0 12px;
+}
+
+.omni-cross-sell-list {
+  display: grid;
+  gap: 12px;
+}
+
+.omni-cross-sell-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.omni-cross-sell-item button {
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,8 @@
+api_version = "2024-10"
+
+[[extensions]]
+type = "theme"
+name = "Omni Store Toolkit"
+handle = "omni-storefront"
+
+uid = "bc270079-cf36-223f-b859-8ccab56d65ba65ef5062"
