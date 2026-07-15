@@ -1,5 +1,7 @@
 # Omni Store Toolkit
 
+> **产品迁移**：本模块已归入独立产品 [Conversion Pulse](https://github.com/Alohamonde/conversion-pulse)（`apps/omni`）。本仓库保留作历史源码。
+
 三合一 Shopify App：**促销弹窗**、**批量商品编辑**、**关联销售**。基于 Remix + Polaris + Theme App Extension，适合学习 Shopify 全栈开发。
 
 ![Shopify](https://img.shields.io/badge/Shopify-App-7AB55C?logo=shopify&logoColor=white)
